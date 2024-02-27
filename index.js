@@ -9,12 +9,12 @@ app.use(express.json());
 app.use(cors());
 app.use("/token", tokenRouter);
 
-app.listen(5050, async () => {
+app.listen(3030, async () => {
   try {
     await connection;
     console.log("connected to db");
   } catch (error) {
     console.log(error);
   }
-  console.log("Server is runing at 5050");
+  console.log("Server is runing at 3030");
 });
