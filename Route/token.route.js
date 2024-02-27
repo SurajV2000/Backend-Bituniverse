@@ -13,8 +13,8 @@ tokenRouter.post("/add", async (req, res) => {
 
 tokenRouter.get("/", async (req, res) => {
   try {
-    const token = await TokenModel.find();
-    res.status(200).send(token);
+    const tokens = await TokenModel.find();
+    res.status(200).send(tokens);
   } catch (error) {
     res.status(400).send({ msg: error.message });
   }
