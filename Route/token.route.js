@@ -1,5 +1,5 @@
 const express = require("express");
-const { TokenModel } = require("../Model/token.model.js");
+const { TokenModel } = require("../Model/token.model");
 const tokenRouter = express.Router();
 tokenRouter.post("/add", async (req, res) => {
   try {
